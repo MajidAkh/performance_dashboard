@@ -15,7 +15,7 @@ Ce projet fournit un tableau de bord pour analyser la performance des étudiants
 
 1. **Clonez le dépôt GitHub**
     ```bash
-    git clone [URL_DU_DEPOT]
+    git clone https://github.com/MajidAkh/performance_dashboard.git
     ```
 
 2. **Naviguez vers le dossier du projet**
