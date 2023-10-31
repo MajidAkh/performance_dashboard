@@ -1,21 +1,41 @@
-# Projet Student Performance Dashboard
+# **Projet Student Performance Dashboard**
 
-Ce projet fournit un tableau de bord pour analyser la performance des étudiants en fonction de divers facteurs explicatifs. Les facteurs ont été initialement sélectionnés en utilisant un modèle Random Forest pour déterminer l'importance des variables. De plus, pour offrir une flexibilité maximale aux utilisateurs, une fonctionnalité a été ajoutée pour permettre la sélection manuelle des variables à prendre en compte dans l'analyse.
+## **Description**
+Ce projet fournit un tableau de bord pour analyser la performance des étudiants en fonction de divers facteurs. Les variables explicatives sont sélectionnées initialement en utilisant la méthode Random Forest. En outre, le tableau de bord offre une flexibilité permettant aux utilisateurs d’ajouter manuellement des variables et d'ajuster leur pondération pour une analyse plus précise.
 
-## Caractéristiques principales
+## **Fonctionnalités**
+- **Sélection Automatique des Variables** : Identification des variables les plus pertinentes via Random Forest.
+- **Sélection Manuelle des Variables** : Option pour inclure/exclure manuellement des variables dans l'analyse.
+- **Ajustement des Ponderations** : Possibilité de modifier la pondération des variables sélectionnées.
 
-1. **Sélection automatique des variables** : Le modèle utilise le Random Forest pour déterminer les variables les plus influentes en termes de performance des étudiants.
+## **Prérequis**
+- Docker doit être installé. Suivez les instructions d’installation [ici](https://docs.docker.com/get-docker/).
 
-2. **Sélection manuelle des variables** : Les utilisateurs ont la liberté d'ajouter ou de retirer des variables du modèle pour voir comment elles influencent la performance.
+## **Instructions pour Docker**
 
-3. **Ajustement des pondérations** : Une fois les variables sélectionnées, les utilisateurs peuvent ajuster la pondération de chaque variable à l'aide de curseurs, ce qui permet de moduler l'impact de chaque facteur sur l'analyse finale.
+1. **Clonez le dépôt GitHub**
+    ```bash
+    git clone [URL_DU_DEPOT]
+    ```
 
-## Prérequis
+2. **Naviguez vers le dossier du projet**
+    ```bash
+    cd student-performance-dashboard
+    ```
 
-- Installer Docker : Suivez les instructions d'installation [ici](https://docs.docker.com/get-docker/).
+3. **Construisez l'image Docker**
+    ```bash
+    docker build -t student-dashboard .
+    ```
 
-## Lancement du projet avec Docker
+4. **Lancez le conteneur Docker**
+    ```bash
+    docker run -p 8501:8501 student-dashboard
+    ```
 
-1. Clonez ce dépôt :
-```bash
-git clone https://github.com/MajidAkh/performance_dashboard.git
+5. **Accédez au tableau de bord via le navigateur**
+    - Ouvrez votre navigateur et visitez `http://localhost:8501`
+
+## **Contact**
+Pour plus d'informations ou pour du support, veuillez contacter à [majid.akharaz@gmail.com].
+
